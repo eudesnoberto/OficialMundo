@@ -1,0 +1,46 @@
+{
+	"name" : "oficialmundoalcalino/projeto",
+	"description" : "Oficial Mundo Alcalino",
+	"authors" : [
+
+	{
+		"name" : "Eudes Alves",
+		"email" : "eudes.sna@gmail.com"
+	}
+
+	 ],
+    "require": {
+        "symfony/var-dumper": "^5.3",
+        "league/plates": "^3.4",
+        "vlucas/phpdotenv": "^5.3",
+        "doctrine/inflector": "^2.0",
+        "phpmailer/phpmailer": "^6.5",
+        "ext-mbstring": "*",
+        "dompdf/dompdf" : "^1.0",
+        "almasaeed2010/adminlte": "^3.2"
+
+    },
+    "autoload": {
+        "files": [
+            "app/helpers/constants.php",
+            "app/router/router.php",
+            "app/core/controller.php",
+            "app/database/connect.php",
+            "app/database/fetch.php",
+            "app/database/update.php",
+            "app/database/delete.php",
+            "app/database/create.php",
+            "app/helpers/redirect.php",
+            "app/helpers/flash.php",
+            "app/helpers/sessions.php",
+            "app/helpers/validate.php",
+            "app/helpers/validations.php",
+            "app/helpers/helpers.php",
+            "app/helpers/old.php",
+            "app/helpers/csrf.php"
+            ],
+        "psr-4": {
+            "app\\":"app"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+RewriteEngine on
+
+RewriteRule .* - [E=HTTP_HTTP_X_REQUESTED_WITH:%{HTTP:HTTP-X-REQUESTED-WITH}]
+
+<IfModule mod_rewrite.c>
+
+
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+
+    RewriteRule ^ index.php [L]
+
+
+
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+
+# Defina o pacote “ea-php80” como a linguagem padrão de programação “PHP”.
+
+<IfModule mime_module>
+
+  AddHandler application/x-httpd-ea-php80 .php .php8 .phtml
+
+</IfModule>
+
+# php -- END cPanel-generated handler, do not edit
+
